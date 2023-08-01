@@ -13,7 +13,7 @@ class Movie:
         implementing getters and setters, or any other public methods.
         Let's dive into that below.
     """
-
+    
     def get_title(self):
         return self.title
     
@@ -38,12 +38,12 @@ class Movie:
         print("Genre -- ", self.genre)
 
 def main():
-    movie = Movie(title="Jesus Saves", year="2023", genre="Christianity")
+    movie = Movie(title="The Passion of the Christ", year="2004", genre="Drama")
     movie.print_details()
 
     print("---")
-    movie.set_title = "The Passion of Christ"
-    print("New title --- ", movie.get_title)
+    movie.set_title("War room")
+    print("New title --- ", movie.get_title())
     print("---")
     movie.print_details()
 
